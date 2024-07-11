@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #000000; /* Tomato color */
+    --secondary-color: #f65384; /* Light blue background */
+    --text-color: #333;
+    --intro-bg: #2ef1e4; /* Light blue */
+    --about-bg: #ffa200; /* Pale green */
+    --projects-bg: #ffb6c1; /* Light pink */
+    --resume-bg: #cca5e6; /* Light salmon */
+    --contact-bg: #87cefa; /* Light sky blue */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    background-image: url('contact.jpg');
+    
+    background-repeat: no-repeat;
+}
+
+.about-page {
+    background-image: url('abt.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro, .about, .projects, .resume, .contact {
+    max-width: 746px;
+    margin: 165px auto;
+    padding: 55px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+}
+
+.intro {
+    background-color: var(--intro-bg);
+    max-width: 755px;
+    margin: 90px auto;
+    padding: 84px;
+    background-color: rgb(90, 253, 245);
+    border-radius: 10px;
+}
+
+.about {
+    background-color: var(--about-bg);
+}
+
+.projects {
+    background-color: var(--projects-bg);
+    max-width: 860px;
+    margin: 90px auto;
+    padding: 65px;
+    background-color: rgb(254, 153, 190);
+    border-radius: 10px;
+}
+
+.resume {
+    background-color: var(--resume-bg);
+    max-width: 765px;
+    margin: 80px auto;
+    padding: 95px;
+}
+
+.contact {
+    background-color: var(--contact-bg);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #f74187; 
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: -432px;
+    width: 100%;
+}
